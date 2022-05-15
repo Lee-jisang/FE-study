@@ -1,5 +1,9 @@
 # 프론트 엔드 공부
 
+- html
+- css
 - javascript
-- react
 - typescript
+- react
+- redux
+
