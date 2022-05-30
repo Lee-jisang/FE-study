@@ -38,8 +38,8 @@ Inline 스타일 방식은 코드의 재활용이 되지 않기 때문에 자주
  
 ### 2. Internal
 
-Internal은 문서에 <style>을 활용한 방법입니다.
-style은 head 태그 내부에 들어가며 style 안에 스타일 규칙이 들어갑니다.
+Internal은 문서에 style을 활용한 방법입니다.
+style은 head 태그 내부에 들어가며 style 안에 스타일 규칙이 들어간다.
 
  ```css
 <style> div {color: red;} </style>
@@ -50,7 +50,6 @@ style은 head 태그 내부에 들어가며 style 안에 스타일 규칙이 들
 페이지가 많고 스타일 규칙 내용이 많아지면 결코 쉬운 일은 아닙니다.
 
  
-
 ### 3. External
 
 External은 외부 스타일 시트 파일을 이용한 방법입니다.
@@ -64,14 +63,13 @@ div {color: red;}
  ```css
 <link rel="stylesheet" href="css/style.css">
  ```
-<head> 내부에 <link>를 선언한 후 href 속성을 이용해 CSS 파일의 경로를 적습니다.
+head 내부에 link를 선언한 후 href 속성을 이용해 CSS 파일의 경로를 적습니다.
 rel 속성은 연결되는 파일이 문서와 어떤 관계인지를 명시하는 속성으로, CSS 파일은 'stylesheet' 라고 적어야 합니다.
 외부 스타일 시트 방식으로 스타일을 선언하면 많은 페이지가 있더라도 이 한 줄로 모든 페이지에 같은 스타일을 적용할 수 있습니다.
 또한, 수정이 필요할 때도 CSS 파일을 수정하면 연결된 모든 페이지에 반영할 수 있습니다.
 외부 스타일 시트 방식은 파일 관리가 편하면서도 용량이 작기 때문에 주로 사용되는 방법입니다.
 
  
-
 ### 4. Import
 
 Import는 스타일 시트 내에서 다른 스타일 시트 파일을 불러오는 방식.
