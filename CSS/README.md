@@ -16,3 +16,13 @@ h1 { color: yellow; font-size:2em; }
 - 선언(declaration) - "color: yellow", "font-size: 2em"
 - 선언부(declaration block) - "{ color: yellow; font-size:2em; }"
 - 규칙(rule set) - "h1 { color: yellow; font-size:2em; }"
+- 주석(comment) - /* 주석내용 */
+
+## CSS의 속성(Property)과 HTML의 속성(Attribute)
+
+- HTML의 속성은 영어로 attribute이고, CSS의 속성은 property <br>
+둘 다 한국어로 번역할 때 "속성"이라고 하므로 잘 구분해야 함. <br>
+
+## 적용
+
+### inline
