@@ -2,11 +2,50 @@
 <html lang="ko">
 <head>
     <meta charset="UTF-8">
-    <title>css</title>
+    <title>CSS 연습</title>
     <link href="./style.css" rel="stylesheet">
+    <style>
+      /*요소 선택자*/
+      h1 { color: yellow; font-size: 2em; background-color: gray; }
+      /*그룹화
+      h1, h2, h3, h4, h5, h6 { color: yellow; font-size: 2em; background-color: gray; }
+      */
+      /*class 선택자*/
+      .html {color: purple;}
+      .css {text-decoration: underline;}
+      /*id 선택자*/
+      #bar { background-color: yellow; }
+      #id-selector { font-size: 30px; }
+      /* class 선택자와의 차이점
+      1. .기호가 아닌 #기호 사용
+      2. 태그의 class 속성이 아닌 id 속성을 참조
+      3. 문서 내에 유일한 요소에 사용
+      4. 구체성
+      */
+      .item { background: gray; }
+      .a { color: yellow; }
+      .b { color: blue; }
+      #special { color: red; }
+    </style>
+
 </head>
 <body>
-    <p>Hello, CSS</p>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa debitis facere fuga laboriosam placeat provident, quibusdam quidem quo sapiente totam?</p>
+    <h1>Hello, CSS</h1>
+    <p id="bar">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa debitis facere fuga laboriosam placeat provident, quibusdam quidem quo sapiente totam?</p>
+
+    <dl>
+    <dt class="html">HTML</dt>
+    <dd><span class="html">HTML</span>은 문서의 구조를 나타냅니다.</dd>
+    <dt class="css">CSS</dt>
+    <dd><span class="css">CSS</span>는 문서의 표현을 나타냅니다.</dd>
+    <dt class="html css">JS</dt> <!--다중 class-->
+    <dd><span class="html css">JS</span>는 문서의 동작을 나타냅니다.</dd>
+    </dl>
+
+    <ul>
+      <li class="item a">first</a>
+      <li class="item b">second</a>
+      <li class="item" id="special">third</a>
+    </ul>
 </body>
 </html>
