@@ -4,7 +4,7 @@
 - src 폴더 : 코드 짜는 곳
 
 ```
-index.js
+                    index.js
 App.js:메인 페이지 -----------> index.html
 package.json: 프로젝트 정보, 프로젝트 명, 버전, 라이브러리명
 ```
@@ -27,9 +27,9 @@ package.json: 프로젝트 정보, 프로젝트 명, 버전, 라이브러리명
 
 import { useState } from "react";
 let [글제목, b] = useState("남자 코트 추천"); //Destructuring
-//왜 state를 쓰냐? -> state에 보관한 자료만 바꾸면 html 재렌더링됨
-  즉, 변동시 자동으로 html에 반영되게 만들고 싶으면 state 쓰면됨
-자주 변경될거같은 html 부분은 state로 만들어 놓기
+- 왜 state를 쓰냐? -> state에 보관한 자료만 바꾸면 html 재렌더링됨
+- 즉, 변동시 자동으로 html에 반영되게 만들고 싶으면 state 쓰면됨
+- 자주 변경될거같은 html 부분은 state로 만들어 놓기
 
 let [a,c] = [1,2]; ->Destructuring
 
@@ -43,7 +43,7 @@ state 변경하는 법
 - state 변경함수 이용, state변경함수(새로운state)
 
 
-어떤걸 컴포넌트로 만들면 좋은가
+- 어떤걸 컴포넌트로 만들면 좋은가
 1.반복적인 html 축약할때
 2. 큰 페이지들
 3. 자주변경되는 것들
