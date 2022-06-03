@@ -21,6 +21,40 @@
   - let a; 
   - a= a ?? 10 -> 10
 
+# 조건문
+
+- 다른언어들이랑 같음, if, else, switch, case 등
+
+# 함수
+
+```javascript
+function getArea(){
+  
+  return ~~;
+}
+
+getArea()
+```
+- 매개변수
+- 지역변수, 전역변수
+
+```javascript
+let helloA = function() {
+  return "안녕하세요 여러분";
+} // 함수 표현식, 호이스팅 불가
+```
+
+
+```javascript
+console.log(helloB());
+
+function helloB(){
+  return "안녕하세요 여러분";
+} //함수 선언식, 호이스팅 가능(함수를 뒤에 써도 됨)
+```
+
+
+
 # 객체
 
 ```javascript
