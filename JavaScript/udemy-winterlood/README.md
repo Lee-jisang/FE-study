@@ -105,3 +105,11 @@ const name = getName(person);
 console.log(name);
 ```
 
+# 삼항 연산자
+
+- 조건식을 파격적으로 줄여준다.
+
+```javascript
+let a = -1;
+a >= 0 ? console.log("양수") : console.log("음수");
+```
