@@ -57,6 +57,9 @@ function helloB(){
 
 # 객체
 
+- 접근 방식 : person[key], person.name
+- 괄호표기법은 함수에서도 사용가능
+
 ```javascript
 let person = new Object;
 let person = {}; //객체 리터럴 방식 이걸 주로 사용
