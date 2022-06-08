@@ -129,4 +129,18 @@ const result = a ? true : false;
 console.log(result);
 ```
 
+# 단락 회로 평가
 
+- 논리 연산자 : &&, ||, !
+- true || true 일때는 앞에 값 return
+- ture || false 일때는 true인 값 
+
+```javascript
+const getName = (person) => {
+  const name = person && person.name;
+  return name || "객체가 아닙니다";
+};
+let person = { name: "이정환" };
+const name = getName(person);
+console.log(name);
+```
