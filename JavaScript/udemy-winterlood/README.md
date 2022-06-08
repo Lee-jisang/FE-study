@@ -181,4 +181,28 @@ console.log(getMeal());
 
 # 비 구조화 할당
 
-- 
+```javascript
+let [one, two, three, four = "four"] = ["one", 2, "three"];
+console.log(one, two, three, four);
+```
+
+```javascript
+//swap
+let a = 10;
+let b = 20;
+
+[a, b] = [b, a];
+console.log(a, b);
+```
+
+```javascript
+let object = {
+  one: "one",
+  two: "two",
+  three: "three",
+  name: "이지상"
+};
+
+let { name: myName, one, two, three } = object;
+console.log(one, two, three, myName);
+```
