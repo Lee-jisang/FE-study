@@ -74,3 +74,32 @@ let person = {}; //객체 리터럴 방식 이걸 주로 사용
 - concat
 - sort(), compare
 - join
+
+
+<hr>
+
+# Truthy & Falsy
+
+```javascript
+let a = undefined;
+//null, undefined, 0, -0, NaN, "" -> False
+if (a) {
+  console.log("TRUE");
+} else {
+  console.log("FALSE");
+}
+```
+
+```javascript
+const getName = (person) => {
+  if (!person) { //if(person === undefined || person === null)
+    return "객체가 아닙니다"; 
+  }
+  return person.name;
+};
+
+let person;
+const name = getName(person);
+console.log(name);
+```
+
