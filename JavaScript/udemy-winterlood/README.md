@@ -133,14 +133,15 @@ console.log(result);
 
 - 논리 연산자 : &&, ||, !
 - true || true 일때는 앞에 값 return
-- ture || false 일때는 true인 값 
+- ture || false 일때는 true인 값 return
 
 ```javascript
 const getName = (person) => {
   const name = person && person.name;
   return name || "객체가 아닙니다";
 };
-let person = { name: "이정환" };
+
+let person = { name: "이정환" }; // person이 null 일때는 객체가 아닙니다 
 const name = getName(person);
 console.log(name);
 ```
