@@ -108,6 +108,7 @@ console.log(name);
 # 삼항 연산자
 
 - 조건식을 파격적으로 줄여준다.
+- (조건) ? 참 : 거짓
 
 ```javascript
 let a = -1;
