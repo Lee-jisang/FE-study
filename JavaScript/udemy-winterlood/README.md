@@ -114,3 +114,19 @@ console.log(name);
 let a = -1;
 a >= 0 ? console.log("양수") : console.log("음수");
 ```
+
+```javascript
+let a = [];
+
+const arrayStatus = a.length === 0 ? "빈 배열" : "안 빈 배열";
+console.log(arrayStatus);
+```
+
+```javascript
+let a = [];
+
+const result = a ? true : false;
+console.log(result);
+```
+
+
