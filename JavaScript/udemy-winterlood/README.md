@@ -80,6 +80,8 @@ let person = {}; //객체 리터럴 방식 이걸 주로 사용
 
 # Truthy & Falsy
 
+- 자바스크립트에서 참과 거짓의 조건
+
 ```javascript
 let a = undefined;
 //null, undefined, 0, -0, NaN, "" -> False
