@@ -204,5 +204,5 @@ let object = {
 };
 
 let { name: myName, one, two, three } = object;
-console.log(one, two, three, myName);
+console.log(one, two, three, myName); 
 ```
