@@ -64,6 +64,17 @@ function helloB(){
 let person = new Object;
 let person = {}; //객체 리터럴 방식 이걸 주로 사용
 ``` 
+```javascript
+const person = {
+  name: "이지상",
+  age: 26,
+  say: function () {
+    console.log(`안녕 나는 ${this["name"]}`); //person[name] 이랑 같음
+  }
+};
+
+person["say"]();
+```
 
 # 배열 내장함수
 
