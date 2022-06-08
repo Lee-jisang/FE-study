@@ -61,3 +61,16 @@ function helloB(){
 let person = new Object;
 let person = {}; //객체 리터럴 방식 이걸 주로 사용
 ``` 
+
+# 배열 내장함수
+
+- foreach
+- map : 새로운 배열로 합쳐줌
+- includes: 원소찾기 bool 반환
+- indexOf : 인덱스 위치 알려줌
+- findIndex
+- filter
+- slice
+- concat
+- sort(), compare
+- join
