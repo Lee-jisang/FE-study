@@ -178,3 +178,7 @@ const getMeal = (mealType) => {
 console.log(getMeal("중식"));
 console.log(getMeal());
 ```
+
+# 비 구조화 할당
+
+- 
