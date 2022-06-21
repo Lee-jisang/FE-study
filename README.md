@@ -3,7 +3,7 @@
 - html
 - css
 - javascript
-- typescript
+- typescript   
 - react
 - redux
 
