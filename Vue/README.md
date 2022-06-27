@@ -2,14 +2,26 @@
 
 
 
-## vue.js가 무엇인가요?
-
 ## 시작하기
 
-## 선언적 렌더링
+```html
+<div id="app">
+  {{ message }}
+</div>
+```
 
-## 조건문과 반복문
+```javascript
+var app = new Vue({
+  el: '#app',
+  data: {
+    message: '안녕하세요 Vue!'
+  }
+})
+```
 
-## 사용자 입력 핸들링
+## Vue 인스턴스
 
-## 컴포넌트를 사용한 작성방법
+
+- 라이프사이클 다이어그램
+
+![image](https://user-images.githubusercontent.com/76837780/175900737-b23b9d8f-7589-4036-8c6c-1dd4263bc458.png)
