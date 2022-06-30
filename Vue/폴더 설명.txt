@@ -1,0 +1,1 @@
+project 폴더-https://www.youtube.com/watch?v=b0ImUEsqaAA -> 뷰입문 따라한 폴더입니다// node_modules은 제거하고 올렸습니다
