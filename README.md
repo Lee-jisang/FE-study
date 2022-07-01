@@ -6,5 +6,4 @@
 - typescript   
 - react
 - redux
-- 
 
