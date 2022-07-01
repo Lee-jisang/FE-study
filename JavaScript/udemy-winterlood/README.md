@@ -2,13 +2,13 @@
 
 <hr>
 
-# 변수와 상수
+## 변수와 상수
 
 - let, var이랑 다르게 같은 이름의 변수 중복 선언 허용 x
 - const는 재할당 금지, 선언하고 할당 안됨
 
 
-# 자료형과 형변환
+## 자료형과 형변환
 
 ![image](https://user-images.githubusercontent.com/76837780/171782095-7bb32b2d-1383-402b-9eac-9bb0dae266e5.png)
 
@@ -16,7 +16,7 @@
 
 - parseInt : 문자열에서 숫자로 형변환(명시적 형변환)
 
-# 연산자
+## 연산자
 
 - 비교 연산자 -> === : 타입까지 같냐 비교, == : 값만 비교
 - typeof 연산자 : 변수의 자료형이 뭔지 알려줌
@@ -24,11 +24,11 @@
   - let a; 
   - a= a ?? 10 -> 10
 
-# 조건문
+## 조건문
 
 - 다른언어들이랑 같음, if, else, switch, case 등
 
-# 함수
+## 함수
 
 ```javascript
 function getArea(){
@@ -58,7 +58,7 @@ function helloB(){
 
 
 
-# 객체
+## 객체
 
 - 접근 방식 : person[key], person.name
 - 괄호표기법은 함수에서도 사용가능
@@ -79,7 +79,7 @@ const person = {
 person["say"]();
 ```
 
-# 배열 내장함수
+## 배열 내장함수
 
 - foreach
 - map : 새로운 배열로 합쳐줌
@@ -97,7 +97,7 @@ person["say"]();
 
 <hr>
 
-# Truthy & Falsy
+## Truthy & Falsy
 
 - 자바스크립트에서 참과 거짓의 조건
 
@@ -124,7 +124,7 @@ const name = getName(person);
 console.log(name);
 ```
 
-# 삼항 연산자
+## 삼항 연산자
 
 - 조건식을 파격적으로 줄여준다.
 - (조건) ? 참 : 거짓
@@ -148,7 +148,7 @@ const result = a ? true : false;
 console.log(result);
 ```
 
-# 단락 회로 평가
+## 단락 회로 평가
 
 - 논리 연산자 : &&, ||, !
 - true || true 일때는 앞에 값 return
@@ -165,7 +165,7 @@ const name = getName(person);
 console.log(name);
 ```
 
-# 조건문 업그레이드
+## 조건문 업그레이드
 
 ```javascript
 const meal = {
@@ -184,7 +184,7 @@ console.log(getMeal("중식"));
 console.log(getMeal());
 ```
 
-# 비 구조화 할당
+## 비 구조화 할당
 
 ```javascript
 let [one, two, three, four = "four"] = ["one", 2, "three"];
