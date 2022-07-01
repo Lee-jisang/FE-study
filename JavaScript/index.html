@@ -1,0 +1,124 @@
+<!-- 굉장히 간단하지만
+  사용자의 인풋값을 핸들링 onclick, onchange
+  dom객체를 보이거나 안보이는 것
+을 컨트롤 하는 것이 js이다  -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+  </head>
+
+  <body>
+    <div class="container">
+      <div>이름 : <input type="text" name="" id="name" /></div>
+      <div>
+        지역:
+        <select id="city" onchange="changeCity();">
+          <option value="02" selected>서울</option>
+          <option value="064">제주</option>
+        </select>
+      </div>
+      <div>
+        동네:
+        <select name="" id="region_02">
+          <option value="">강남</option>
+          <option value="">서초</option>
+        </select>
+        <select name="" id="region_064" style="display: none">
+          <option value="">제주시</option>
+          <option value="">서귀포시</option>
+        </select>
+      </div>
+      <div>테스트 : <input type="text" id="test" value="" /></div>
+      <button type="button" onclick="regist();">등록</button>
+    </div>
+
+    <!-- jquery 가지고오는 스크립트 -->
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
+      crossorigin="anonymous"
+    ></script>
+
+    <script>
+      function regist() {
+        // alert(document.getElementById("name").value);
+        // alert(document.getElementById("city").value); // 실제 들어있는 값은 value 02,064
+        // document.getElementById("name").value;
+
+        //jquery-> 자바스크립트를 매우단순화해줌
+        alert($("#name").val());
+        alert($("#city").val());
+
+        // 키를 안잡아놔도 됨
+        let obj = {};
+
+        obj.name = $("#name").val();
+        obj.city = $("#city").val();
+        printConsole(obj);
+      }
+
+      function loadCity() {
+        let city = [
+          { code: "02", name: "서울" },
+          { code: "064", name: "제주" },
+        ];
+      }
+
+      function printConsole(data) {
+        console.log(data);
+      }
+
+      function changeCity() {
+        // let city = document.getElementById("city").value;
+        // document.getElementById("region_" + "02").style.display = "none";
+        // document.getElementById("region_" + "064").style.display = "none";
+
+        // document.getElementById("region_" + city).style.display = "";
+
+        //jquery-> 자바스크립트를 매우단순화해줌
+        let city = $("#city").val();
+        $("#region_02").hide();
+        $("#region_064").hide();
+
+        $("#region_" + city).show();
+      }
+      // var, let, const
+      // 가변적, 고정, 절대고정(재할당 금지)
+      var x = 1;
+      x = x + 2;
+      // let x = 1;
+      // const y = 3;
+      document.getElementById("test").value = x;
+
+      //숫자, 소수점 숫자, 문자, 참/거짓(boolean), 오브젝트, 배열
+      let a = 1;
+      a = 1.231;
+      a = "jisang";
+      a = true; //false
+
+      //json이 오브젝트(key, value)로 구성되어있음
+      // 오브젝트안에는 어떤데이터 타입도 담을 수 있음, 다중구조도 허용
+      let obj = {
+        name: "",
+        city: "",
+      };
+
+      // 배열도 객체랑 마찬가지로 어떤데이터 타입도 담을 수 있음
+    </script>
+  </body>
+</html>
