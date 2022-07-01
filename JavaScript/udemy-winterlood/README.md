@@ -212,3 +212,33 @@ let object = {
 let { name: myName, one, two, three } = object;
 console.log(one, two, three, myName); 
 ```
+
+## spread 연산자
+
+- 객체의 중복되는 요소를 펼치는 spread 연산자
+
+```javascript
+const cookie = {
+  base: "cookie",
+  madeIn: "korea"
+};
+
+const chocochipCookie = {
+  ...cookie,
+  toping: "chocochip"
+};
+
+console.log(chocochipCookie);
+```
+
+- 배열의 요소를 모두 합쳐서 보여줌.
+
+```javascript
+const noTopingCookies = ["촉촉쿠키", "안촉촉쿠키"];
+const TopingCookies = ["촉촉쿠키", "바나나쿠키", "블루베리쿠키"];
+
+const allCookies = [...noTopingCookies, "함정쿠키", ...TopingCookies];
+console.log(allCookies);
+
+```
+
