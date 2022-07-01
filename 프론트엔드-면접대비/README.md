@@ -6,21 +6,15 @@
 
 
 <details>
-<summary><strong>DOCTYPE 이란 무엇인가요?</strong></summary>
-  <hr>
-  
+<summary><strong>DOCTYPE 이란 무엇인가요?</strong></summary>  
   'DOCTYPE'은 웹 브라우저에서 처리할 문서가 HTML이며 어떠한 버전으로 사용하였으니 해당 방식대로 해석하라는 의미를 갖는다
-
   <hr>
 </details>
 
 <details>
 <summary><strong>시맨틱 태그란 무엇인가요?</strong></summary>
-  <hr>
-  
     의미론적인 태그이다. 예를들면 b태그보다는 strong태그로 중요하다는 의미를 강조한다.
-  
-  <hr>
+    <hr>
 </details>
 
 
