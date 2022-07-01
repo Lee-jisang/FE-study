@@ -239,10 +239,16 @@ const TopingCookies = ["촉촉쿠키", "바나나쿠키", "블루베리쿠키"];
 
 const allCookies = [...noTopingCookies, "함정쿠키", ...TopingCookies];
 console.log(allCookies);
-
 ```
 
-- 참고로 중복제거
+- 참고로 중복제거 SET은 ES6에서 새로등장한 data object
 
-![image](https://user-images.githubusercontent.com/76837780/176851051-df309f0a-de61-4a71-a4cb-b4f23be6169b.png)
+```javascript
+const array = ['0', 1, 2, '0', 3, 1];
+console.log(...new Set(array));
+// '0' 1 2 3
+
+console.log(Array.from(new Set(array)))// 
+// ['0', 1, 2, 3]
+```
 
