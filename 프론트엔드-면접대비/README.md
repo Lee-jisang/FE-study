@@ -9,7 +9,7 @@
 <summary><strong>DOCTYPE 이란 무엇인가요?</strong></summary>
   <hr>
   
-  DOCTYPE은 웹 브라우저에서 처리할 문서가 HTML이며 어떠한 버전으로 사용하였으니 해당 방식대로 해석하라는 의미를 갖는다
+  'DOCTYPE'은 웹 브라우저에서 처리할 문서가 HTML이며 어떠한 버전으로 사용하였으니 해당 방식대로 해석하라는 의미를 갖는다
 
   <hr>
 </details>
