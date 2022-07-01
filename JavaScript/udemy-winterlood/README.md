@@ -92,6 +92,7 @@ person["say"]();
 - sort(), compare
 - join
 
+<br>
 
 > # Javascript 응용
 
