@@ -242,3 +242,7 @@ console.log(allCookies);
 
 ```
 
+- 참고로 중복제거
+
+![image](https://user-images.githubusercontent.com/76837780/176851051-df309f0a-de61-4a71-a4cb-b4f23be6169b.png)
+
