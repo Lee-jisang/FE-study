@@ -14,6 +14,15 @@
   <hr>
 </details>
 
+<details>
+<summary><strong>시맨틱 태그란 무엇인가요?</strong></summary>
+  <hr>
+  
+    의미론적인 태그이다. 예를들면 b태그보다는 strong태그로 중요하다는 의미를 강조한다.
+  
+  <hr>
+</details>
+
 
 
 
