@@ -93,7 +93,7 @@ person["say"]();
 - join
 
 
-> # Javascript 
+> # Javascript 응용
 
 <hr>
 
