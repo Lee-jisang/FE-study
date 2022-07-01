@@ -3,7 +3,6 @@
 - html
 - css
 - javascript -> typescript
-
-- react,redux,mobx
+- react, redux, mobx
 - vue
 
