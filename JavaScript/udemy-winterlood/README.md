@@ -185,7 +185,7 @@ console.log(getMeal("중식"));
 console.log(getMeal());
 ```
 
-## 비 구조화 할당
+## 비 구조화 할당(destructuring)
 
 ```javascript
 let [one, two, three, four = "four"] = ["one", 2, "three"];
