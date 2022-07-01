@@ -1,3 +1,6 @@
+> # Javascript 기본
+
+<hr>
 
 # 변수와 상수
 
@@ -89,6 +92,8 @@ person["say"]();
 - sort(), compare
 - join
 
+
+> # Javascript 
 
 <hr>
 
