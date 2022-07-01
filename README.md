@@ -2,8 +2,8 @@
 
 - html
 - css
-- javascript
-- typescript   
-- react
-- redux
+- javascript -> typescript
+
+- react,redux,mobx
+- vue
 
