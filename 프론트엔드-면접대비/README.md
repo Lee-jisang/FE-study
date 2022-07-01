@@ -29,7 +29,7 @@
 두가지 모두 웹사이트에서 시작적인 부분을 만드는데 필요해 빠른 "first meaningful paint"를 가능하게 합니다. 하지만 문서 최하단 즉, `<head>`가 아닌곳에 stylesheet를 두는 것은 많은 브라우저 상에서 점진적 렌더링을 금지하게 되고, 사용자가 빈화면을 보게 만들게 됩니다.
 
 - first meaningful paint : 사이트의 성능 지표중 하나, 사이트 최적화의 범주
-    <hr>
+    <hr> 
 </details>
 
 
