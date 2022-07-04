@@ -1,1 +1,2 @@
 project-vuestart 폴더-https://www.youtube.com/watch?v=b0ImUEsqaAA -> 뷰입문 따라한 폴더입니다// node_modules은 제거하고 올렸습니다
+Vue - The Complete Guide 폴더-https://hanium.udemy.com/course/vuejs-2-the-complete-guide/learn/lecture/21463164#reviews, Slice-강의자료
