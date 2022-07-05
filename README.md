@@ -16,4 +16,6 @@
 - ![a](https://img.shields.io/badge/React-61dafb?style=flat-square&logo=React&logoColor=black) 
 - <img src="https://img.shields.io/badge/Vue.js-4FC08D?style=flat-square&logo=Vue.js&logoColor=black"/>
 
+
 [프론트엔드 면접대비!](https://github.com/Lee-jisang/FE-study/tree/main/%ED%94%84%EB%A1%A0%ED%8A%B8%EC%97%94%EB%93%9C-%EB%A9%B4%EC%A0%91%EB%8C%80%EB%B9%84)
+[용어 정리] (https://github.com/Lee-jisang/FE-study/tree/main/%ED%94%84%EB%A1%A0%ED%8A%B8%EC%97%94%EB%93%9C-%EB%A9%B4%EC%A0%91%EB%8C%80%EB%B9%84)
