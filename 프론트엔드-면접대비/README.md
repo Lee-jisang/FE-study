@@ -45,6 +45,7 @@
     <hr> 
 </details>
 
+  
 <details>
 <summary><strong>nodejs와 그냥 js의 차이점은 무엇인가요?</strong></summary>
     <hr>
@@ -54,6 +55,8 @@
     <hr> 
 </details>
   
+  
+![image](https://user-images.githubusercontent.com/76837780/177282565-9237f649-cdc2-458b-9558-a116e4658b9e.png)
 
 
 ## 용어
