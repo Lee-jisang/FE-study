@@ -53,9 +53,6 @@
 [출처](https://hazel-developer.tistory.com/152#node.js%EC%9D%98-%EC%9E%A5%EC%A0%90)
    
 </details>
-  
-  
-![image](https://user-images.githubusercontent.com/76837780/177282565-9237f649-cdc2-458b-9558-a116e4658b9e.png)
 
 
 ## 용어
