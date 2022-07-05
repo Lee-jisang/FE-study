@@ -229,6 +229,11 @@ const chocochipCookie = {
 };
 
 console.log(chocochipCookie);
+###
+{base: "cookie", madeIn: "korea", toping: "chocochip"}
+base: "cookie"
+madeIn: "korea"
+toping: "chocochip"
 ```
 
 - 배열의 요소를 모두 합쳐서 보여줌.
