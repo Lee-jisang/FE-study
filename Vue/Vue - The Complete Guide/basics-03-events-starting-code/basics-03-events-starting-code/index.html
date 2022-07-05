@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vue Basics</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Jost:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="https://unpkg.com/vue@next" defer></script>
+    <script src="app.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <h1>Vue Events</h1>
+    </header>
+    <section id="events">
+      <h2>Events in Action</h2>
+      + or - number enter:
+      <input type="text" v-model.number="mynum" />
+      <br /><br />
+      <!-- v-on:click.middle , right -->
+      <button v-on:click.middle="add(mynum)">Add {{mynum}}</button>
+      <button @click="reduce(mynum)">Reduce {{mynum}}</button>
+      <p v-once>Starting Counter: {{ counter }}</p>
+      <p>Result: {{ counter }}</p>
+      <!-- v-on:input 이벤트를 이용한 input -->
+      <!-- <input type="text" v-on:input="setName" />
+      <p>Event My name: {{name1}}</p>
+      <hr /> -->
+      <!-- 양방향 데이터바인딩(v-model)을 이용한 input -->
+      <!-- <input type="text" v-model="name2" />
+      <p>v-model My name: {{name2}}</p>
+      <hr /> -->
+      <!-- v-on:keyup.enter를 이용한 -->
+      <!-- <input type="text" @keyup.enter="enterName" />
+      <p>keyup Enter My name: {{name3}}</p>
+      <hr /> -->
+      <!-- 함수속 매개변수에 이벤트 넣기 -->
+      <input
+        type="text"
+        v-on:input="setName2($event, 'jisang')"
+        v-on:keyup.enter="confirmInput"
+      />
+      <p>My name: {{confirmName}}</p>
+      <form v-on:submit.prevent="submitForm">
+        <input type="text" />
+        <button>Sign up</button>
+      </form>
+    </section>
+  </body>
+</html>
