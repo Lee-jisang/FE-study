@@ -1,3 +1,11 @@
+# 프로젝트 생성시
+
+- VS code에서 폴더 생성하고 연다음 터미널에서 npx create-react-app 프로젝트명
+- 바로 하위폴더로 가게 하기
+- 필요없는 파일 삭제
+
+
+
 # react-coding apple 강의 정리
 
 - public 폴더 : static 파일 모아놓는 곳
