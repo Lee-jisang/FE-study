@@ -44,6 +44,14 @@
       const는 하나의 변수명으로 단 한번 선언될 수 있고, 재할당이 금지되어있다. 또 선언과 초기화가 동시에 이루어져야 한다.
     <hr> 
 </details>
+
+<details>
+<summary><strong>nodejs와 그냥 js의 차이점은 무엇인가요?</strong></summary>
+    <hr>
+      ![image](https://user-images.githubusercontent.com/76837780/177282338-b0d2531b-cf10-4c2f-be4a-9b758aa930ac.png)   
+      [출처](https://hazel-developer.tistory.com/152#node.js%EC%9D%98-%EC%9E%A5%EC%A0%90)
+    <hr> 
+</details>
   
 
 
