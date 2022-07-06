@@ -52,6 +52,26 @@
    
 </details>
 
+<details>
+<summary><strong>호이스팅이 무엇인가요?</strong></summary>
+    <hr>
+     변수 선언문이 코드의 선두로 끌어 올려진 것처럼 동작하는 자바스크립트 고유의 특징을 말한다.
+     선언문을 찾아서 먼저 실행시키는 것이다. 변수뿐만 아니라 모든 식별자는 호이스팅 된다.
+     모든 선언문은 런타임 이전단계에서 먼저 실행되기 때문이다.
+    <hr> 
+</details>
+
+<details>
+<summary><strong>호이스팅은 개발자가 이해하기 어려운데 왜 만들었을까요? 일어나는 이유가 뭘까요?</strong></summary>
+    <hr>
+      [답](https://velog.io/@ansrjsdn/%ED%98%B8%EC%9D%B4%EC%8A%A4%ED%8C%85%EC%9D%80-%EC%99%9C-%EC%83%9D%EA%B8%B0%EB%8A%94-%EA%B1%B8%EA%B9%8C)
+    <hr> 
+</details>
+
+
+
+
+
 
 ## 용어
 
