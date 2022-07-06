@@ -101,7 +101,12 @@ for (var i = 0; i < 2; i++) { console.log(i); }
 
 # 06. 데이터 타입
 
+- ES6에서는 7개의 데이터 타입을 제공 원시타입과 객체타입으로 분류
+- 
+
+
 ```javascript
+//원시타입
 var foo;
 console.log(typeof foo);  // undefined
 
@@ -120,6 +125,7 @@ console.log(typeof foo);  // object
 foo = Symbol(); // 심벌
 console.log(typeof foo);  // symbol
 
+//객체타입
 foo = {}; // 객체
 console.log(typeof foo);  // object
 
