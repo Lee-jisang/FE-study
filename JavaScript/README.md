@@ -142,5 +142,7 @@ foo = function () {}; // 함수
 console.log(typeof foo);  // function
 ```
 
+# 07. 연산자
+
 
 
