@@ -103,7 +103,7 @@ for (var i = 0; i < 2; i++) { console.log(i); }
 
 - ES6에서는 7개의 데이터 타입을 제공 원시타입과 객체타입으로 분류
 - 원시타입과 객체타입으로 분류 할 수 있다. 
-
+- 자바스크립트에서 문자열은 원시타입으로 변경불가능한 값이다.
 
 ```javascript
 //원시타입
@@ -135,3 +135,6 @@ console.log(typeof foo);  // object
 foo = function () {}; // 함수
 console.log(typeof foo);  // function
 ```
+
+- 템플릿 리터럴은 멀티라인 문자열, 표현식 삽입, 태그드 템플릿 등 문자열 처리기능 알고있자. 
+
