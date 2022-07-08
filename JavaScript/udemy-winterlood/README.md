@@ -154,6 +154,9 @@ console.log(result);
 - 논리 연산자 : &&, ||, !
 - true || true 일때는 앞에 값 return
 - ture || false 일때는 true인 값 return
+- true && true 일때는 뒤에값 return
+- false && true, true && false 일때는 
+
 
 ```javascript
 const getName = (person) => {
