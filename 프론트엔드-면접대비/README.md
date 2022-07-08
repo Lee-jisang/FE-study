@@ -40,7 +40,7 @@
 <details>
 <summary><strong>margin, padding의 차이는 무엇인가요?</strong></summary>
     
-<hr>  
+  <hr>  
     
     margin은 바깥쪽 여백
     padding은 안쪽 여백
@@ -51,7 +51,7 @@
     
     [참고](https://velog.io/@hyejin4169/CSS-margin-padding-%EC%B0%A8%EC%9D%B4%EC%A0%90%EA%B3%BC-%EC%82%AC%EC%9A%A9%EB%B2%95-%EC%A0%95%EB%A6%AC)
     
-<hr>
+  <hr>
     
 </details>
 
