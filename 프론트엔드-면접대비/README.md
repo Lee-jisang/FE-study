@@ -83,7 +83,12 @@ padding은 안쪽 여백<br>
     <hr> 
 </details>
 
-
+<details>
+<summary><strong>== 과 === 의 차이가 무엇인가요?</strong></summary>
+    <hr>
+      == 은 동등비교 연산자로 좌항과 우항의 값이 같다는 것을 의미하고 , <br> === 은 일치비교연산자로 좌항과 우항의 값과 타입까지 같다는 것을 의미한다.
+    <hr> 
+</details>
 
 
 
