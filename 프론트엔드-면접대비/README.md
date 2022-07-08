@@ -42,8 +42,8 @@
     
   <hr>  
     
-    margin은 바깥쪽 여백
-    padding은 안쪽 여백
+    `margin`은 바깥쪽 여백
+    `padding`은 안쪽 여백
     
     ![image](https://user-images.githubusercontent.com/76837780/177903285-6e98ba8c-7994-4ba6-8a11-08c8dcd33011.png)
   
@@ -51,7 +51,7 @@
     
     [참고](https://velog.io/@hyejin4169/CSS-margin-padding-%EC%B0%A8%EC%9D%B4%EC%A0%90%EA%B3%BC-%EC%82%AC%EC%9A%A9%EB%B2%95-%EC%A0%95%EB%A6%AC)
     
-  <hr>
+
     
 </details>
 
