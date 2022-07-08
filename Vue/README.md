@@ -4,6 +4,9 @@
 
 ## 시작하기
 
+![image](https://user-images.githubusercontent.com/76837780/177941337-80861723-a939-46b5-a0f1-3537ad0f0efc.png)
+
+
 ```html
 <div id="app">
   {{ message }}
