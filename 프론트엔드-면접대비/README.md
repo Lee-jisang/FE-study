@@ -21,8 +21,7 @@
 # CSS
 
 <details>
-<summary><strong>CSS를 head 위에 둬야하는 이유는 무엇인가요?</strong></summary>
-    
+<summary><strong>CSS를 head 위에 둬야하는 이유는 무엇인가요?</strong></summary>   
 <hr>  
     
 `<head>` 안에 `<link>`를 넣는 이유는 최적화된 웹사이트를 구출할때 적절한 명세의 일부입니다.<br>
@@ -32,27 +31,20 @@
 
 - first meaningful paint : 사이트의 성능 지표중 하나, 사이트 최적화의 범주
     
- <hr>
-    
+ <hr> 
 </details>
 
 
 <details>
 <summary><strong>margin, padding의 차이는 무엇인가요?</strong></summary>
+    <hr>
+margin은 바깥쪽 여백<br>
+padding은 안쪽 여백<br>
+       
+![image](https://user-images.githubusercontent.com/76837780/177903285-6e98ba8c-7994-4ba6-8a11-08c8dcd33011.png)
     
-  <hr>  
-    
-    `margin`은 바깥쪽 여백
-    `padding`은 안쪽 여백
-    
-    ![image](https://user-images.githubusercontent.com/76837780/177903285-6e98ba8c-7994-4ba6-8a11-08c8dcd33011.png)
-  
-    [참고](https://bebeya.tistory.com/entry/CSS-margin-padding-%EA%B0%9C%EB%85%90-%EC%82%AC%EC%9A%A9%EB%B2%95-%EC%A0%95%EB%A6%AC)
-    
-    [참고](https://velog.io/@hyejin4169/CSS-margin-padding-%EC%B0%A8%EC%9D%B4%EC%A0%90%EA%B3%BC-%EC%82%AC%EC%9A%A9%EB%B2%95-%EC%A0%95%EB%A6%AC)
-    
-
-    
+[참고](https://bebeya.tistory.com/entry/CSS-margin-padding-%EA%B0%9C%EB%85%90-%EC%82%AC%EC%9A%A9%EB%B2%95-%EC%A0%95%EB%A6%AC) , [참고](https://velog.io/@hyejin4169/CSS-margin-padding-%EC%B0%A8%EC%9D%B4%EC%A0%90%EA%B3%BC-%EC%82%AC%EC%9A%A9%EB%B2%95-%EC%A0%95%EB%A6%AC)
+    <hr>
 </details>
 
 # JS
