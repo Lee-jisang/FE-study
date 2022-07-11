@@ -202,6 +202,22 @@ console.log(o); // {}
 - 널병합 연산자 ?? -> 좌항의 피연산자가 null 또는 undefined인 경우 우항의 피연산자를 반환 그렇지 않으면 좌항의 피연산자를 반환한다.
 
 
+```javascript
+var elem = null;
+
+// elem이 null 또는 undefined이면 undefined를 반환하고, 그렇지 않으면 우항의 프로퍼티 참조를 이어간다.
+var value = elem?.value;
+console.log(value); // undefined
+```
+
+
+```javascript
+// 좌항의 피연산자가 null 또는 undefined이면 우항의 피연산자를 반환하고, 그렇지 않으면 좌항의 피연산자를 반환한다.
+var foo = null ?? 'default string';
+console.log(foo); // "default string"
+```
+
+
 10.
 
 - 
