@@ -91,6 +91,21 @@ padding은 안쪽 여백<br>
 </details>
 
 
+<details>
+<summary><strong>NaN 과 NaN을 비교하면 어떻게 되나요? 어떻게 확인할 수 있나요?</strong></summary>
+<hr>
+    
+- NaN은 다른 모든 값과 비교(==, !=, ===, !==)했을 때에도 같지 않고, 다른 NaN과도 같지 않다.
+- 그래서 NaN을 판별할 때는 isNaN() 또는 Number.isNaN()을 사용하면 가장 분명하게 NaN을 판별할 수 있다.
+- 오로지 NaN만이 자기자신과 비교했을 때 같지 않다.
+- NaN === NaN -> false   
+
+[참조](https://velog.io/@pul8219/JS-NaN-isNaN%EA%B3%BC-Number.isNaN%EC%9D%98-%EC%B0%A8%EC%9D%B4)
+
+<hr> 
+    
+</details>
+
 
 
 ## 용어
