@@ -218,6 +218,4 @@ console.log(foo); // "default string"
 ```
 
 
-10.
 
-- 
