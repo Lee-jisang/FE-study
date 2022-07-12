@@ -78,9 +78,11 @@ padding은 안쪽 여백<br>
 
 <details>
 <summary><strong>호이스팅은 개발자가 이해하기 어려운데 왜 만들었을까요? 일어나는 이유가 뭘까요?</strong></summary>
-    <hr>
-      [답] (https://velog.io/@ansrjsdn/%ED%98%B8%EC%9D%B4%EC%8A%A4%ED%8C%85%EC%9D%80-%EC%99%9C-%EC%83%9D%EA%B8%B0%EB%8A%94-%EA%B1%B8%EA%B9%8C)
-    <hr> 
+<hr>
+    
+[답](https://velog.io/@ansrjsdn/%ED%98%B8%EC%9D%B4%EC%8A%A4%ED%8C%85%EC%9D%80-%EC%99%9C-%EC%83%9D%EA%B8%B0%EB%8A%94-%EA%B1%B8%EA%B9%8C)
+    
+<hr> 
 </details>
 
 <details>
