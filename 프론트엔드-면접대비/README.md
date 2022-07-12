@@ -108,6 +108,28 @@ padding은 안쪽 여백<br>
 
 
 
+# Web
+
+<details>
+<summary><strong>렌더링이 되는 과정을 설명해주세요.</strong></summary>
+<hr>
+    
+- HTML 파일과 CSS 파일을 파싱해서 각각 Tree를 만든다. (Parsing)
+- 두 Tree를 결합하여 Rendering Tree를 만든다. (Style)
+- Rendering Tree에서 각 노드의 위치와 크기를 계산한다. (Layout)
+- 계산된 값을 이용해 각 노드를 화면상의 실제 픽셀로 변환하고, 레이어를 만든다. (Paint)
+- 레이어를 합성하여 실제 화면에 나타낸다. (Composite)
+
+[참조](https://velog.io/@eassy/%EB%B8%8C%EB%9D%BC%EC%9A%B0%EC%A0%80-%ED%8E%98%EC%9D%B4%EC%A7%80%EA%B0%80-%EB%A0%8C%EB%8D%94%EB%A7%81-%EB%90%98%EB%8A%94-%EA%B3%BC%EC%A0%95%EC%97%90-%EB%8C%80%ED%95%B4-%EC%84%A4%EB%AA%85%ED%95%B4%EC%A3%BC%EC%84%B8%EC%9A%94)
+
+[참조](https://tecoble.techcourse.co.kr/post/2021-10-24-browser-rendering/)
+
+<hr> 
+    
+</details>
+
+
+
 ## 용어
 
 - DOM: 문서객체모델로 브라우저에서 자바스크립트 html요소를 제어할 수 있도록 해주는 api, 브라우저에서 제공하는 기능같은 것임
