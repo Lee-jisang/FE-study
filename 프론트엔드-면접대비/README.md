@@ -108,7 +108,14 @@ padding은 안쪽 여백<br>
     
 </details>
 
-
+<details>
+<summary><strong>ES6에서 추가된 기능은?</strong></summary>
+<hr>    
+    
+[참조](https://velog.io/@takeknowledge/javscript-ES6%EC%97%90-%EC%B6%94%EA%B0%80%EB%90%9C-%EA%B8%B0%EB%8A%A5-%EA%B0%84%EB%8B%A8-%EC%A0%95%EB%A6%AC)
+    
+<hr>   
+</details>
 
 # Web
 
