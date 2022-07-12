@@ -136,6 +136,7 @@ padding은 안쪽 여백<br>
 - BOM: 브라우저객체모델로 브라우저 자체를 객체화함으로서 자바스크립트로 제어할 수 있도록 하는 인터페이스, <br> 예를들면 window, document, history, location, screen, navigator 등이 있음     
 - API : 애플리케이션에서 데이터를 읽거나 쓰기위해 사용하는 인터페이스(소통방법) <br> 
          ex)HTTP API-open api(public api), private api// Java API, Android API
+- 
 - 렌더링
 - 서버사이드 렌더링
 
