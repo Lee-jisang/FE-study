@@ -150,6 +150,7 @@ padding은 안쪽 여백<br>
         
 [참조](https://velog.io/@surim014/HTTP%EB%9E%80-%EB%AC%B4%EC%97%87%EC%9D%B8%EA%B0%80){:target="_blank"}
         
+        <a href="https://www.google.com/" target="_blank">
 <hr> 
       
 </details>
