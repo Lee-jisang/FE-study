@@ -146,6 +146,8 @@ padding은 안쪽 여백<br>
 - 서버가 요청에 대한 답변을 클라이언트에게 보내는 것을 `응답`이라고 한다. 
     
 [참조](https://velog.io/@surim014/HTTP%EB%9E%80-%EB%AC%B4%EC%97%87%EC%9D%B8%EA%B0%80)
+
+[go](http://stackoverflow.com){:target="_blank" rel="noopener"}
         
 <hr> 
       
