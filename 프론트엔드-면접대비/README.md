@@ -166,4 +166,4 @@ padding은 안쪽 여백<br>
 - 서버사이드 렌더링
     
 
-<a href="https://www.google.com/" target="_blank">새 탭에서 열기</a>
+<a href="https://www.google.com/" target="_blank" rel="noopener">새 탭에서 열기</a>
