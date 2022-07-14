@@ -151,6 +151,19 @@ padding은 안쪽 여백<br>
       
 </details>
 
+<details>
+<summary><strong>크로스 브라우징이 뭐고 어떻게 하나요?</strong></summary>
+<hr>
+    
+- 크로스브라우징은 웹 페이지 제작 시에 모든 브라우저에서 깨지지 않고 의도한 대로 올바르게(호환성) 나오게 하는 작업을 말한다.
+   
+[참조](https://velog.io/@93jm/Cross-Browsing%ED%81%AC%EB%A1%9C%EC%8A%A4-%EB%B8%8C%EB%9D%BC%EC%9A%B0%EC%A7%95)
+[참조](https://velog.io/@seochanh/00003)
+    
+<hr> 
+      
+</details>
+
 ## 용어
 
 - DOM: 문서객체모델로 브라우저에서 자바스크립트 html요소를 제어할 수 있도록 해주는 api, 브라우저에서 제공하는 기능같은 것임
