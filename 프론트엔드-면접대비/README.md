@@ -157,7 +157,7 @@ padding은 안쪽 여백<br>
     
 - 크로스브라우징은 웹 페이지 제작 시에 모든 브라우저에서 깨지지 않고 의도한 대로 올바르게(호환성) 나오게 하는 작업을 말한다.
    
-[참조](https://velog.io/@93jm/Cross-Browsing%ED%81%AC%EB%A1%9C%EC%8A%A4-%EB%B8%8C%EB%9D%BC%EC%9A%B0%EC%A7%95)
+[참조](https://velog.io/@93jm/Cross-Browsing%ED%81%AC%EB%A1%9C%EC%8A%A4-%EB%B8%8C%EB%9D%BC%EC%9A%B0%EC%A7%95) ,
 [참조](https://velog.io/@seochanh/00003)
     
 <hr> 
