@@ -123,6 +123,8 @@ padding은 안쪽 여백<br>
 <summary><strong>렌더링이 되는 과정을 설명해주세요.</strong></summary>
 <hr>
     
+- 사용자가 브라우저를 통해 웹 사이트에 접속하면, 서버로 부터 HTML, CSS 등 웹 사이트에 필요한 리소스를 다운로드 받습니다. 브라우저가 페이지를 렌더링 하려면 먼저 HTML 코드는 DOM, CSS는 CSSOM 트리를 생성해야합니다.    
+    
 - HTML 파일과 CSS 파일을 파싱해서 각각 Tree를 만든다. (Parsing)
 - 두 Tree를 결합하여 Rendering Tree를 만든다. (Style)
 - Rendering Tree에서 각 노드의 위치와 크기를 계산한다. (Layout)
