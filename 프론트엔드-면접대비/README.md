@@ -181,6 +181,7 @@ padding은 안쪽 여백<br>
 - 첫 번째, URI는 정보의 자원을 표현해야 한다.
 - 두 번째, 자원에 대한 행위는 HTTP Method(GET, POST, PUT, DELETE)로 표현한다.
    
+[참조](https://khj93.tistory.com/entry/%EB%84%A4%ED%8A%B8%EC%9B%8C%ED%81%AC-REST-API%EB%9E%80-REST-RESTful%EC%9D%B4%EB%9E%80), 
 [참조](https://meetup.toast.com/posts/92) 
     
 <hr> 
@@ -195,7 +196,9 @@ padding은 안쪽 여백<br>
 - BOM: 브라우저객체모델로 브라우저 자체를 객체화함으로서 자바스크립트로 제어할 수 있도록 하는 인터페이스, <br> 예를들면 window, document, history, location, screen, navigator 등이 있음     
 - API : 애플리케이션에서 데이터를 읽거나 쓰기위해 사용하는 인터페이스(소통방법) <br> 
          ex)HTTP API-open api(public api), private api// Java API, Android API
-- REST-API
-- 렌더링
-- 서버사이드 렌더링
-    
+- REST-API: 자원, 행위, 표현으로 구성되어있는 REST의 원리를 따르는 API
+- 렌더링: 렌더링이란 서버로부터 HTML 파일을 받아 브라우저에 뿌려주는 과정이다.
+- 서버사이드 렌더링(SSR)
+- 클라이언트사이드 렌더링(CSR)
+- XML
+- JASON
