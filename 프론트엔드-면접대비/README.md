@@ -202,3 +202,5 @@ padding은 안쪽 여백<br>
 - 클라이언트사이드 렌더링(CSR)
 - XML
 - JASON
+- 웹소켓-ajax
+- AWS
