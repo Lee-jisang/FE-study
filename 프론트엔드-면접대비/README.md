@@ -166,6 +166,29 @@ padding은 안쪽 여백<br>
       
 </details>
 
+</details>
+
+<details>
+<summary><strong>REST API란?</strong></summary>
+<hr>
+
+> 구성
+- 자원(RESOURCE) - URI
+- 행위(Verb) - HTTP METHOD
+- 표현(Representations)
+
+> 가이드
+- 첫 번째, URI는 정보의 자원을 표현해야 한다.
+- 두 번째, 자원에 대한 행위는 HTTP Method(GET, POST, PUT, DELETE)로 표현한다.
+   
+[참조](https://meetup.toast.com/posts/92) 
+    
+<hr> 
+      
+</details>
+
+
+
 ## 용어
 
 - DOM: 문서객체모델로 브라우저에서 자바스크립트 html요소를 제어할 수 있도록 해주는 api, 브라우저에서 제공하는 기능같은 것임
