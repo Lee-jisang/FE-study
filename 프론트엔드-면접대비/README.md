@@ -117,6 +117,21 @@ padding은 안쪽 여백<br>
 <hr>   
 </details>
 
+<details>
+<summary><strong>block scope란 무엇인가요?</strong></summary>
+<hr>   
+
+블록 스코프는 블록({})내부에서 선언된 변수는 해당 블록에서만 접근 가능한 걸 말한다.  
+`var`의 경우 함수 스코프를 따르므로, 함수 내부에서는 변수 접근이 가능하다. 
+하지만, `let`, `const`는 블록 스코프를 따르므로 블록 바깥에서는 변수 접근이 불가하다.
+
+[참조](https://mong-blog.tistory.com/entry/%EB%B8%94%EB%A1%9D-%EC%8A%A4%EC%BD%94%ED%94%84-%ED%95%A8%EC%88%98-%EC%8A%A4%EC%BD%94%ED%94%84%EC%9D%98-%EC%B0%A8%EC%9D%B4-javascript?category=967416)
+    
+<hr>   
+</details>
+
+
+
 # Web
 
 <details>
