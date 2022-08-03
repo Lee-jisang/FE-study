@@ -106,14 +106,14 @@ function App() {
     }
   });
 
-  //메뉴명 수정
+  //메뉴명 수정,삭제 버튼
   $("#espresso-menu-list").addEventListener("click", (e) => {
     if (e.target.classList.contains("menu-edit-button")) {
-      updateMenuName(e);
+      updateMenuName(e); //수정
     }
 
     if (e.target.classList.contains("menu-remove-button")) {
-      removeMenuName(e);
+      removeMenuName(e); //삭제
     }
   });
 }
