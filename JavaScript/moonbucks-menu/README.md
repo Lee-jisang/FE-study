@@ -1,5 +1,5 @@
 [미션 저장소](https://github.com/blackcoffee-study/moonbucks-menu)
-<>
+<br>
 [강의 자료](https://blog.makerjun.com/blackcoffee/moonbucks-guidebook)
 
 # ☕️ 문벅스 강의 에서 얻은 것 - 회고
