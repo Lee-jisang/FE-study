@@ -1,8 +1,12 @@
+# ☕️ 강의 자료
+
+[강의링크](https://www.udemy.com/course/vanilla-js-lv1/)
+<br>
 [미션 저장소](https://github.com/blackcoffee-study/moonbucks-menu)
 <br>
 [강의 자료](https://blog.makerjun.com/blackcoffee/moonbucks-guidebook)
 
-# ☕️ 문벅스 강의 에서 얻은 것 - 회고
+# ☕️ 강의 에서 얻은 것 - 회고
 
 ![image](https://user-images.githubusercontent.com/76837780/183040239-3e612aa7-95e3-43e6-8ea4-1ae76e0749e3.png)
 
@@ -14,7 +18,7 @@
 - API의 간단한 CRUD 동작 방식에 대해 이해하였다.
   - 웹서버를 실행하는 동안만 데이터가 저장되므로 후에 백엔드를 연결하여 실제로 데이터가 저장되는 프로그램을 만들 것이다.
 
-# 🥥 계획
+# ☕️ 계획
 
 > 나중에 데이터를 저장하는 ToDoList,일정관리표,알림서비스,타이머 등의 기능을 만들어 보고싶다.
 
