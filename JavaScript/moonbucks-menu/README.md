@@ -1,9 +1,10 @@
 [미션 저장소](https://github.com/blackcoffee-study/moonbucks-menu)
+<>
 [강의 자료](https://blog.makerjun.com/blackcoffee/moonbucks-guidebook)
 
 # ☕️ 문벅스 강의 에서 얻은 것 - 회고
 
-![image](https://user-images.githubusercontent.com/76837780/183038322-68093bdd-dc1b-467a-adaf-355b33689882.png)
+![image](https://user-images.githubusercontent.com/76837780/183040239-3e612aa7-95e3-43e6-8ea4-1ae76e0749e3.png)
 
 - 강의를 듣는 것에 그치지 않고 따로 복습을 하였다.
 - 여러 기능을 추가하여 보았다.
