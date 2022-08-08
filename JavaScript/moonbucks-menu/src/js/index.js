@@ -63,21 +63,38 @@
 // - [o] 서버에 새로운 매뉴가 추가될 수 있도록 요청한다.
 // - [o] 서버에 카테고리별 메뉴리스트를 불러온다.
 // - [o] 서버에 메뉴가 수정 될 수 있도록 요청한다.
-// - [] 서버에 메뉴의 품절상태가 토글될 수 있도록 요청한다.
-// - [] 서버에 메뉴가 삭제 될 수 있도록 요청한다.
+// - [o] 서버에 메뉴의 품절상태가 토글될 수 있도록 요청한다.
+// - [o] 서버에 메뉴가 삭제 될 수 있도록 요청한다.
 
 // TODO 리팩토링 부분
-// - [] localStorage에 저장하는 로직은 지운다.
-// - [] fetch 비동기 api를 사용하는 부분을 async await을 사용하여 구현한다.
+// - [o] localStorage에 저장하는 로직은 지운다.
+// - [o] fetch 비동기 api를 사용하는 부분을 async await을 사용하여 구현한다.
 
 // TODO 사용자 경험
-// - [] API 통신이 실패하는 경우에 대해 사용자가 알 수 있게 alert으로 예외처리를 진행한다.
-// - [] 중복되는 메뉴는 추가할 수 없다.
+// - [o] API 통신이 실패하는 경우에 대해 사용자가 알 수 있게 alert으로 예외처리를 진행한다.
+// - [o] 중복되는 메뉴는 추가할 수 없다.
 
 // 내가 검토한 사항
 // - [o] 품절된거는 수정되지 않아야하지 않나
 // - [o] 2글자 이하면 수정이나 삭제안되게 알림?
 // - [o] 취소누르면 빈값 들어오는 거
+
+// 오늘의 회고
+// 1. 웹서버 연동, menu-server
+// 2. BASE_URL 웹서버 변수 먼저선언
+// 3. 비동기 처리하는데 해당하는 부분이 어디인지 확인하고, 웹서버에 요청하게끔 코드 짜기
+// 4. 서버에 요청한 후 데이터를 받아서 화면에 렌더링 하기
+// 5. 리팩토링
+// - localStorage 부분 지우기
+// - API 파일 따로 만들어서 진행
+// - 페이지 렌더링과 관련해서 중복되는 부분들 제거,
+// - 서버 요청 할 때 option 객체
+// - 카테고리 버튼 클릭 시 콜백 함수 분리 - changecategory
+// 6. 사용자 경험 부분
+
+// 꼭 기억해야 할 부분
+// 학습 할때 그레이존을 발견해서 이곳을 학습!
+// 코드리뷰
 
 const $ = (selector) => document.querySelector(selector);
 
@@ -94,71 +111,83 @@ const BASE_URL = "http://localhost:3000/api";
 //프론트에서 서버에 데이터를 요청하거나 변경할 때, fetch 사용
 //fetch("http://localhost:3000/api", option); //첫번째 인자는 url,두번째 인자는 상세한 옵션
 
-const MenuApi = {
-  //전체 메뉴를 GET으로 받아오는 함수
-  async getAllMenuByCategory(category) {
-    const response = await fetch(
-      `${BASE_URL}/category/${category}/menu` //this.currentCategory의 this는 MenuAPI이다
-    );
-    return response.json(); //await 키워드 사용하면 then 없이 response를 받을 수 있음
-  },
-
-  //현재 카테고리에 따라 메뉴명을 추가
-  async createMenu(category, name) {
-    const response = await fetch(`${BASE_URL}/category/${category}/menu`, {
-      method: "POST", //생성
+const HTTP_METHOD = {
+  POST(data) {
+    return {
+      method: "POST",
       headers: {
         "Content-Type": "application/json", //JSON데이터로 주고받는다
       },
-      body: JSON.stringify({ name }),
-    });
-    if (!response.ok) {
-      console.error("에러가 발생했습니다");
-    }
+      body: JSON.stringify(data),
+    };
   },
+  PUT(data) {
+    return {
+      method: "PUT",
+      headers: {
+        "Content-Type": "application/json", //JSON데이터로 주고받는다
+      },
+      body: data ? JSON.stringify(data) : null,
+    };
+  },
+  DELETE(data) {
+    return {
+      method: "DELETE",
+    };
+  },
+};
 
+const request = async (url, option) => {
+  const response = await fetch(url, option);
+  if (!response.ok) {
+    alert("에러가 발생했습니다.");
+    console.error(e);
+  }
+  return response.json();
+};
+
+const requestWithdoutJson = async (url, option) => {
+  const response = await fetch(url, option);
+  if (!response.ok) {
+    alert("에러가 발생했습니다.");
+    console.error(e);
+  }
+  return response;
+};
+
+const MenuApi = {
+  //전체 메뉴를 GET으로 받아오는 함수
+  async getAllMenuByCategory(category) {
+    return request(`${BASE_URL}/category/${category}/menu`);
+  },
+  //현재 카테고리에 따라 메뉴명을 추가
+  async createMenu(category, name) {
+    return request(
+      `${BASE_URL}/category/${category}/menu`,
+      HTTP_METHOD.POST({ name })
+    );
+  },
   //현재 카테고리에 따라 메뉴명을 수정
   async updateMenu(category, name, menuId) {
-    const response = await fetch(
+    return request(
       `${BASE_URL}/category/${category}/menu/${menuId}`,
-      {
-        method: "PUT", //수정
-        headers: {
-          // 주고받는 데이터
-          "Content-Type": "application/json", //JSON데이터로 주고받는다
-        },
-        body: JSON.stringify({ name }),
-      }
+      HTTP_METHOD.PUT({ name })
     );
-    if (!response.ok) {
-      console.error("에러가 발생했습니다");
-      alert("수정할 때 2글자 이상 입력하여주세요");
-    }
-    return response.json();
   },
-
+  //메뉴명품절표시 토글,수정
   async toggleSoldOutMenu(category, menuId) {
-    const response = await fetch(
+    return request(
       `${BASE_URL}/category/${category}/menu/${menuId}/soldout`,
-      {
-        method: "PUT", //수정
-      }
+      HTTP_METHOD.PUT()
     );
-    if (!response.ok) {
-      console.error("에러가 발생했습니다");
-    }
   },
 
+  //메뉴명 삭제
   async dleteMenu(category, menuId) {
-    const response = await fetch(
+    return requestWithdoutJson(
       `${BASE_URL}/category/${category}/menu/${menuId}`,
-      {
-        method: "DELETE", //삭제
-      }
+      HTTP_METHOD.DELETE()
     );
-    if (!response.ok) {
-      console.error("에러가 발생했습니다");
-    }
   },
 };
 
@@ -181,9 +210,13 @@ function App() {
   };
 
   //render -> 메뉴 목록(li태그)을 화면단에 나타냄
-  const render = () => {
+  const render = async () => {
+    // 새로운 데이터를 불러온다음 렌더링
+    this.menu[this.currentCategory] = await MenuApi.getAllMenuByCategory(
+      this.currentCategory
+    );
     const template = this.menu[this.currentCategory]
-      .map((menuItem, index) => {
+      .map((menuItem) => {
         //인덱스를 만들어준 이유-> 수정,삭제에서 한열을 선택하기 위해서
         return ` 
           <li data-menu-id="${
@@ -232,11 +265,25 @@ function App() {
       alert("값을 입력해주세요.");
       return;
     }
+
+    if ($("#menu-name").value.length < 2) {
+      alert("2글자 이상 입력하여주세요");
+      $("#menu-name").value = "";
+      return;
+    }
+
+    const duplicatedItem = this.menu[this.currentCategory].find(
+      (menuItem) => menuItem.name === $("#menu-name").value
+    );
+
+    if (duplicatedItem) {
+      alert("이미 등록된 메뉴입니다. 다시입력해주세요.");
+      $("#menu-name").value = "";
+      return;
+    }
+
     const menuName = $("#menu-name").value;
     await MenuApi.createMenu(this.currentCategory, menuName);
-    this.menu[this.currentCategory] = await MenuApi.getAllMenuByCategory(
-      this.currentCategory
-    );
     render();
     $("#menu-name").value = ""; //입력하고 나서 인풋값 빈값으로 초기화
     //this.menu[this.currentCategory].push({ name: MenuName }); //배열(리스트)에 push를 이용해 객체를 담을 수 있음
@@ -251,11 +298,13 @@ function App() {
     const menuId = e.target.closest("li").dataset.menuId;
     const $menuName = e.target.closest("li").querySelector(".menu-name"); //가장 가까운 li태그를 찾아서 해당 li태그를 수정한다
     let updatedMenuName = prompt("메뉴명을 수정하세요", $menuName.innerText); //모달창, let으로 해야 재할당 가능
+    if (updatedMenuName.length < 2) {
+      alert("2글자 이상 입력하여주세요");
+      $("#menu-name").value = "";
+      return;
+    }
     if (updatedMenuName === null) updatedMenuName = $menuName.innerText; // 취소 버튼을 눌렀을때 updatedMenuName에 null 이들어감
     await MenuApi.updateMenu(this.currentCategory, updatedMenuName, menuId);
-    this.menu[this.currentCategory] = await MenuApi.getAllMenuByCategory(
-      this.currentCategory
-    );
     render();
     // if (updatedMenuName === null) updatedMenuName = $menuName.innerText; // 취소 버튼을 눌렀을때 updatedMenuName에 null 이들어감
     // if (updatedMenuName !== "") {
@@ -273,9 +322,6 @@ function App() {
       // 확인:true 리턴, 취소: false 리턴
       const menuId = e.target.closest("li").dataset.menuId;
       await MenuApi.dleteMenu(this.currentCategory, menuId);
-      this.menu[this.currentCategory] = await MenuApi.getAllMenuByCategory(
-        this.currentCategory
-      );
       //this.menu[this.currentCategory].splice(menuId, 1);
       //store.setLocalStorage(this.menu);
       //console.log(e.target.closest("li"));
@@ -289,13 +335,22 @@ function App() {
     //console.log(e.target.closest("li"));
     const menuId = e.target.closest("li").dataset.menuId; //munuId에 인덱스 값이 담김
     await MenuApi.toggleSoldOutMenu(this.currentCategory, menuId);
-    this.menu[this.currentCategory] = await MenuApi.getAllMenuByCategory(
-      this.currentCategory
-    );
     // this.menu[this.currentCategory][menuId].soldOut = //soldOut에 대해 선언해주지 않았으므로 undefined가 반환되고, !로 처음에는 true 다시 클릭하면 false
     //   !this.menu[this.currentCategory][menuId].soldOut;
     // store.setLocalStorage(this.menu);
     render();
+  };
+
+  //카테고리버튼을 클릭할때 카테고리를 바꿔주는 함수
+  const changeCategory = (e) => {
+    const isCategoryButton = e.target.classList.contains("cafe-category-name");
+    if (isCategoryButton) {
+      const categoryName = e.target.dataset.categoryName;
+      this.currentCategory = categoryName;
+      $("#category-title").innerText = `${e.target.innerText} 메뉴 관리`;
+      //현재 카테고리에 데이터를 불러오는 api
+      render();
+    }
   };
 
   const initEventListeners = () => {
@@ -341,20 +396,7 @@ function App() {
     });
 
     //카테고리 버튼을 클릭했을 때 해당 메뉴 관리 ex)에스프레소, 프라푸치노~
-    $("nav").addEventListener("click", async (e) => {
-      const isCategoryButton =
-        e.target.classList.contains("cafe-category-name");
-      if (isCategoryButton) {
-        const categoryName = e.target.dataset.categoryName;
-        this.currentCategory = categoryName;
-        $("#category-title").innerText = `${e.target.innerText} 메뉴 관리`;
-        //현재 카테고리에 데이터를 불러오는 api
-        this.menu[this.currentCategory] = await MenuApi.getAllMenuByCategory(
-          this.currentCategory
-        );
-        render();
-      }
-    });
+    $("nav").addEventListener("click", changeCategory);
   };
 }
 
