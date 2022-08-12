@@ -1,8 +1,6 @@
 # 🍚 [개념](https://github.com/Lee-jisang/FE-study/blob/main/JavaScript/concepts/README.md)
 
-- 01
-- 02
-- 03
+> 자바스크립트 개념을 모아놓았습니다!
 
 
 # 🌷 강의에서 얻은것!!
