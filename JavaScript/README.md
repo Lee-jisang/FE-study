@@ -1,5 +1,9 @@
 # 🍚 [개념](https://github.com/Lee-jisang/FE-study/blob/main/JavaScript/concepts/README.md)
 
+- 01
+- 02
+- 03
+
 
 # 🌷 강의에서 얻은것!!
 
