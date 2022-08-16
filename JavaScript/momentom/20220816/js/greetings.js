@@ -39,13 +39,6 @@ function onLoginsubmit(event) {
   paintGreetings(userName);
 }
 
-const alink = document.querySelector("a");
-function moveLink(event) {
-  event.preventDefault();
-  console.dir(event);
-}
-alink.addEventListener("click", moveLink);
-
 function paintGreetings(username) {
   greeting.classList.remove(HIDDEN_CLASSNAME);
   greeting.innerHTML = `Hello ${username}`;
@@ -55,7 +48,7 @@ const savedUsername = localStorage.getItem("username");
 
 if (savedUsername === null) {
   loginForm.classList.toggle(HIDDEN_CLASSNAME);
-  loginForm.addEventListener("submit", onLoginsubmit); //addEventListener의 함수는 브라우저가 실행하는 함수임
+  loginForm.addEventListener("submit", onLoginsubmit); //addEventListener의 함수는 브라우저가 실행하는 함수임, 사용자가 submit이라는 행동할때 실행되는 것임
 } else {
   paintGreetings(savedUsername);
 }
