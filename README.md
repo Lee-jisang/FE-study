@@ -20,4 +20,11 @@
 [프론트엔드 면접대비!](https://github.com/Lee-jisang/FE-study/tree/main/%ED%94%84%EB%A1%A0%ED%8A%B8%EC%97%94%EB%93%9C-%EB%A9%B4%EC%A0%91%EB%8C%80%EB%B9%84)
 <br>
 
-[참고 사이트](https://velog.io/@kgorae/%EA%B0%9C%EB%B0%9C-%EC%B0%B8%EA%B3%A0-%EC%82%AC%EC%9D%B4%ED%8A%B8)
+<details>
+<summary><strong>참조 사이트</strong></summary>  
+    <hr>
+     [참고 사이트](https://velog.io/@kgorae/%EA%B0%9C%EB%B0%9C-%EC%B0%B8%EA%B3%A0-%EC%82%AC%EC%9D%B4%ED%8A%B8)
+    <hr>      
+</details>
+
+
