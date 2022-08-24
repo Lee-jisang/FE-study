@@ -22,9 +22,7 @@
 
 <details>
 <summary><strong>참조 사이트</strong></summary>  
-    <hr>
-     [참고 사이트](https://velog.io/@kgorae/%EA%B0%9C%EB%B0%9C-%EC%B0%B8%EA%B3%A0-%EC%82%AC%EC%9D%B4%ED%8A%B8)
-    <hr>      
+    [프론트엔드 개발 참고](https://velog.io/@kgorae/%EA%B0%9C%EB%B0%9C-%EC%B0%B8%EA%B3%A0-%EC%82%AC%EC%9D%B4%ED%8A%B8)
 </details>
 
 
