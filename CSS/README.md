@@ -77,4 +77,16 @@ Import는 스타일 시트 내에서 다른 스타일 시트 파일을 불러오
 <style> 내부 상단이나 외부 스타일 시트 파일 상단에 선언하는데 성능상 좋지 않아서 거의 쓰이지 않음.
 
 css 참조 사이트
-https://front.codes/
+
+
+
+<details>
+<summary><strong>FE 개발 참조 사이트</strong></summary>  
+    
+[참조1]
+    
+[참조2]
+
+[참조1]: https://front.codes/
+[참조2]: https://www.habonyphp.com/2021/04/log-in-sign-uppure-css12.html
+</details>
