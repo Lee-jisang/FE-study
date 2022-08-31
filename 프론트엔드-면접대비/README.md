@@ -19,6 +19,14 @@
     <hr>
 </details>
 
+<details>
+<summary><strong>meta태그에 대해서 설명하시오.</strong></summary>
+    <hr>
+     meta 태그는 해당 문서에 대한 정보인 메타데이터(metadata)를 정의할 때 사용합니다.
+    
+[답](https://webclub.tistory.com/354)
+    <hr>
+</details>
 
 # CSS
 
