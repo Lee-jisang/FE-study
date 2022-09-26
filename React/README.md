@@ -16,7 +16,7 @@ App.js:메인 페이지 -----------> index.html
 package.json: 프로젝트 정보, 프로젝트 명, 버전, 라이브러리명
 ```
 
-- js파일에서 html을 쓸수있는 JSX
+- js파일에서 html을 쓸수있는 JSX 
 - 원래 리액트에서 div 쓸려면 React.createElement('div',null,'Hello World')
 - JSX를 쓰면 그냥 div 쓰면됨
 
