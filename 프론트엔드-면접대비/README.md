@@ -216,6 +216,36 @@ padding은 안쪽 여백<br>
 </details>
 
 <details>
+<summary><strong>http랑 https의 차이점이 무엇인가요?</strong></summary>
+<hr>
+    
+- 크로스브라우징은 웹 페이지 제작 시에 모든 브라우저에서 깨지지 않고 의도한 대로 올바르게(호환성) 나오게 하는 작업을 말한다.
+- 크로스 브라우징 작업이 필요한 원인은 무엇일까?
+- 브라우저 마다 랜더링 엔진이 다르기 때문이다.
+   
+[참조](https://velog.io/@93jm/Cross-Browsing%ED%81%AC%EB%A1%9C%EC%8A%A4-%EB%B8%8C%EB%9D%BC%EC%9A%B0%EC%A7%95) ,
+[참조](https://velog.io/@seochanh/00003)
+    
+<hr> 
+      
+</details>
+
+<details>
+<summary><strong>쿠키와 세션의 차이점이 무엇인가요?</strong></summary>
+<hr>
+    
+- 크로스브라우징은 웹 페이지 제작 시에 모든 브라우저에서 깨지지 않고 의도한 대로 올바르게(호환성) 나오게 하는 작업을 말한다.
+- 크로스 브라우징 작업이 필요한 원인은 무엇일까?
+- 브라우저 마다 랜더링 엔진이 다르기 때문이다.
+   
+[참조](https://velog.io/@93jm/Cross-Browsing%ED%81%AC%EB%A1%9C%EC%8A%A4-%EB%B8%8C%EB%9D%BC%EC%9A%B0%EC%A7%95) ,
+[참조](https://velog.io/@seochanh/00003)
+    
+<hr> 
+      
+</details>
+
+<details>
 <summary><strong>크로스 브라우징이 뭐고 어떻게 하나요?</strong></summary>
 <hr>
     
