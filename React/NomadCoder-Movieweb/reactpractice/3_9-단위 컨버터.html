@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div id="root"></div>
+  </body>
+  <script src="https://unpkg.com/react@17.0.2/umd/react.production.min.js"></script>
+  <script src="https://unpkg.com/react-dom@17.0.2/umd/react-dom.production.min.js"></script>
+  <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+  <script type="text/babel">
+    function MinutesToHours() {
+      const [amount, setAmount] = React.useState(); //array 제공, 첫번째 element는 current value, 두전째 element는 c.v를 수정해주는 modifier
+      const [inverted, setInverted] = React.useState(false); //false로 시작, 두번째 인자인 함수가 실행될때마다 UI가 새로고침됨
+      const onChange = (event) => {
+        setAmount(event.target.value);
+        console.log(event.target.value);
+      };
+      const onClick = (event) => {
+        console.log("click");
+        if (event.target.value === "0") {
+          event.target.value = null;
+        }
+      };
+      const reset = () => {
+        setAmount(0);
+      };
+      const onFlip = () => {
+        reset();
+        setInverted((current) => !current);
+      };
+      return (
+        <div>
+          <div>
+            <label htmlFor="minutes">Minuites: </label>
+            <input
+              value={inverted ? amount * 60 : amount}
+              id="minutes"
+              placeholder="Minuites"
+              type="number"
+              onChange={onChange}
+              onClick={onClick}
+              disabled={inverted}
+            />
+          </div>
+          <div>
+            <label htmlFor="hours">Hours: </label>
+            <input
+              value={inverted ? amount : Math.round(amount / 60)}
+              id="hours"
+              placeholder="Hours"
+              type="number"
+              onChange={onChange}
+              onClick={onClick}
+              disabled={!inverted}
+            />
+          </div>
+          <button onClick={reset}>Reset</button>&nbsp;
+          <button onClick={onFlip}>{inverted ? "Turn back" : "Invert"}</button>
+        </div>
+      );
+    }
+    function KmToMiles() {
+      const [amount, setAmount] = React.useState(); //array 제공, 첫번째 element는 current value, 두전째 element는 c.v를 수정해주는 modifier
+      const [inverted, setInverted] = React.useState(false); //false로 시작, 두번째 인자인 함수가 실행될때마다 UI가 새로고침됨
+      const onChange = (event) => {
+        setAmount(event.target.value);
+        console.log(event.target.value);
+      };
+      const onClick = (event) => {
+        console.log("click");
+        if (event.target.value === "0") {
+          event.target.value = null;
+        }
+      };
+      const reset = () => {
+        setAmount(0);
+      };
+      const onFlip = () => {
+        reset();
+        setInverted((current) => !current);
+      };
+      return (
+        <div>
+          <div>
+            <label htmlFor="Km">Km: </label>
+            <input
+              value={inverted ? amount * 1.609344 : amount}
+              id="minutes"
+              placeholder="Km"
+              type="number"
+              onChange={onChange}
+              onClick={onClick}
+              disabled={inverted}
+            />
+          </div>
+          <div>
+            <label htmlFor="Miles">Miles: </label>
+            <input
+              value={inverted ? amount : (amount / 1.609344).toFixed(5)}
+              id="hours"
+              placeholder="Miles"
+              type="number"
+              onChange={onChange}
+              onClick={onClick}
+              disabled={!inverted}
+            />
+          </div>
+          <button onClick={reset}>Reset</button>&nbsp;
+          <button onClick={onFlip}>{inverted ? "Turn back" : "Invert"}</button>
+        </div>
+      );
+    }
+    function App() {
+      const [index, setIndex] = React.useState("xx");
+      const onSelect = (event) => {
+        setIndex(event.target.value);
+      };
+      return (
+        <div>
+          <h1>Super Converter</h1>
+          <select value={index} onChange={onSelect}>
+            <option value="xx">Select your units</option>
+            <option value="0">Minuites & Hours</option>
+            <option value="1">Km & Miles</option>
+          </select>
+          <hr />
+          {index === "xx" ? "Please select your units" : null}
+          {index === "0" ? <MinutesToHours /> : null}
+          {index === "1" ? <KmToMiles /> : null}
+        </div>
+      );
+    }
+    const root = document.getElementById("root");
+    ReactDOM.render(<App />, root);
+  </script>
+</html>
+
+<!-- 상태를 변화시킬 때마다, 모든게 새로고침 됨!!!!!!!
+     리액트는 필요한것을 재렌더링함
+    데이터가 변화되면 새로운데이터로 다시 렌더링됨
+
+    modifier가 실행되면 모든 컴포넌트들이 다시 렌더링
+-->
