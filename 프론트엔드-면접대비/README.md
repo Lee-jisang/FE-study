@@ -219,12 +219,8 @@ padding은 안쪽 여백<br>
 <summary><strong>http랑 https의 차이점이 무엇인가요?</strong></summary>
 <hr>
     
-- 크로스브라우징은 웹 페이지 제작 시에 모든 브라우저에서 깨지지 않고 의도한 대로 올바르게(호환성) 나오게 하는 작업을 말한다.
-- 크로스 브라우징 작업이 필요한 원인은 무엇일까?
-- 브라우저 마다 랜더링 엔진이 다르기 때문이다.
+- 따라서 HTTPS는 HTTP보다 더 안전한 보안용 프로토콜이라고 할 수 있습니다. HTTP와 HTTPS의 유일한 차이점은 HTTPS를 사용한 웹 페이지를 통해 전송되는 모든 데이터는 추가적인 보안 계층이 있습니다.
    
-[참조](https://velog.io/@93jm/Cross-Browsing%ED%81%AC%EB%A1%9C%EC%8A%A4-%EB%B8%8C%EB%9D%BC%EC%9A%B0%EC%A7%95) ,
-[참조](https://velog.io/@seochanh/00003)
     
 <hr> 
       
