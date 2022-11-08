@@ -4,7 +4,7 @@
 
 # HTML
 
-  
+    
 <details>
 <summary><strong>DOCTYPE 이란 무엇인가요?</strong></summary>  
     <hr>
